@@ -177,6 +177,8 @@ class CharCorruptionDataset(Dataset):
         # truncation
         trunc_min = 4
         trunc_max = min(len(document), int(self.block_size * 7 / 8))
+        if trunc_max < trunc_min:
+            trunc_max = trunc_min
         trunc_len = random.randint(trunc_min, trunc_max)
         document = document[:trunc_len]
 
