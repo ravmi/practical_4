@@ -1,0 +1,3 @@
+data has 418352 characters, 256 unique.
+500it [00:50,  9.92it/s]
+Correct: 3.0 out of 500.0: 0.6%
